@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
+
   </head>
   <body>
 
@@ -17,7 +18,7 @@
 
       <h2>Video Example</h2>
 
-      <video width="852" height="480" controls>
+      <video width="852" height="480" class="mejs__player">
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
         <track label="English" kind="subtitles" srclang="en" src="bridge-captions.vtt" default>
@@ -25,11 +26,13 @@
 
       <h2>Audio Example</h2>
 
-      <audio controls>
+      <audio class="mejs__player">
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
       </audio>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link href="css/mediaelementplayer.css" rel="stylesheet">
   </body>
 </html>
