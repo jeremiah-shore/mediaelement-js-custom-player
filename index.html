@@ -18,7 +18,7 @@
 
       <h2>Video Example</h2>
       <div class="videoWrapper">
-        <video width="852" height="480" class="mejs__player">
+        <video width="852" height="480">
           <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
           <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
           <track label="English" kind="subtitles" srclang="en" src="bridge-captions.vtt" default>
@@ -27,7 +27,7 @@
 
       <h2>Audio Example</h2>
       <div class="audioWrapper">
-        <audio class="mejs__player">
+        <audio>
           <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
         </audio>
       </div>
@@ -35,6 +35,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript">
+      $('video, audio').mediaelementplayer({
+       features: ['playpause', 'tracks', 'progress'],
+       startLanguage: 'en'
+      });
+    </script>
     <link href="css/mediaelementplayer.css" rel="stylesheet">
   </body>
 </html>
