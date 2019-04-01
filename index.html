@@ -35,12 +35,18 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/mediaelement-and-player.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/skip-back/skip-back.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/skip-back/skip-back-i18n.js"></script>
     <script type="text/javascript">
       $('video, audio').mediaelementplayer({
-       features: ['playpause', 'tracks', 'progress'],
-       startLanguage: 'en'
+       features: ['playpause', 'tracks', 'progress', 'skipback'],
+       startLanguage: 'en',
+       skipBackInterval: 4
       });
     </script>
+    
     <link href="css/mediaelementplayer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/skip-back/skip-back.min.css" />
+
   </body>
 </html>
